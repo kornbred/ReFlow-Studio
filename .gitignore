@@ -1,8 +1,57 @@
-models/
+# --- 1. The Heavy AI Engine (Crucial) ---
+musetalk_engine/models/
+musetalk_engine/checkpoints/
+musetalk_engine/weights/
+musetalk_engine/results/
+musetalk_engine/__pycache__/
+
+# Ignore standalone model weights
+*.pth
+*.pt
+*.onnx
+*.dat
+*.mat
+*.zip
+*.bin
+
+# --- 2. User Data & Configuration (Privacy) ---
+config.json
+
+# Ignore inputs/outputs
+assets/inputs/*
+assets/outputs/*
+outputs/*
+assets/temp/
+
+# Ignore media files
+*.mp4
+*.avi
+*.mov
+*.wav
+*.mp3
+*.mkv
+
+# --- 3. Python & Environment (Security) ---
+__pycache__/
+*.pyc
+*.spec
+
+# Ignore environment variables
+.env
+.env.local
+
+# Ignore virtual environments
+venv/
+env/
+.venv/
+musetalk/ 
+
+# --- 4. System Junk ---
+Thumbs.db
+.DS_Store
+
+# --- 5. Frontend/Web ---
+node_modules/
 dist/
 build/
-*.exe
-*.bin
-*.spec
-__pycache__/
-user_settings.json
+.npm

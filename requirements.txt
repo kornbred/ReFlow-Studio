@@ -1,6 +1,11 @@
 --extra-index-url https://download.pytorch.org/whl/cu118
 
+# GUI
 customtkinter==5.2.2
+Pillow
+packaging
+
+# AI & Media Processing
 openai-whisper
 torch
 torchaudio
@@ -8,11 +13,13 @@ transformers
 TTS
 better-profanity
 nudenet==3.4.2
-opencv-python
-onnxruntime
+opencv-python-headless
+onnxruntime-gpu
 ffmpeg-python
 pydub
 scipy
-Pillow
-packaging
+
+# Utilities
+PyYAML
+requests
 pyinstaller

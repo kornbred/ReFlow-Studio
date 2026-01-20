@@ -1,0 +1,15 @@
+{
+    "theme": "Dark",
+    "color_theme": "blue",
+    "output_folder": "output",
+    "model_dir": "models",
+    "last_input_file": "",
+    "visual": true,
+    "docu": false,
+    "language": "Hinglish",
+    "smart_silence": false,
+    "lipsync": true,
+    "censor": true,
+    "dub": true,
+    "sub": true
+}

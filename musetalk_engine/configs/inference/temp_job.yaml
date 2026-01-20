@@ -1,0 +1,4 @@
+task_0:
+  audio_path: D:/ReFlowStudio/outputs/temp_batch_audio.wav
+  bbox_shift: 5
+  video_path: C:/Users/19shr/Downloads/Sample_Video_25fps.mp4
