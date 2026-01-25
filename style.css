@@ -1,0 +1,256 @@
+/* =========================
+   FONTS
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;900&display=swap');
+
+/* =========================
+   THEME
+========================= */
+:root {
+    --bg: #050505;
+    --grid: #151515; /* softened grid */
+    --neon: #ccff00;
+    --panel: rgba(0,0,0,0.55);
+    --panel-solid: #000;
+    --border-soft: rgba(255,255,255,0.08);
+}
+
+/* =========================
+   ROOT + GRADIO
+========================= */
+html, body {
+    height: 100%;
+    margin: 0;
+    background: var(--bg);
+    overflow: hidden;
+}
+
+.gradio-container {
+    height: 100vh !important;
+    width: 100vw !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* =========================
+   KILL ALL PROGRESS BARS (REAL FIX)
+========================= */
+.progress,
+.progress-bar,
+.progress-level,
+.progress-container,
+.progress-parent,
+.eta-bar,
+.loading,
+.loader,
+div[style*="orange"],
+div[style*="width"][style*="%"] {
+    display: none !important;
+    height: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* =========================
+   MAIN VISUAL PANEL
+========================= */
+.visual-panel {
+    flex: 1;
+    min-height: 0;
+    padding: 36px 42px; /* MORE AIR */
+    overflow: hidden;
+
+    background:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 48px 48px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================
+   SYSTEM HUD (LESS BOXED)
+========================= */
+.hud-bar {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+
+    padding: 16px 26px;
+    margin-bottom: 34px;
+
+    border: 1px solid var(--border-soft);
+    background: rgba(0,0,0,0.35);
+
+    font-family: 'JetBrains Mono';
+    font-size: 0.85rem;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.hud-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hud-label {
+    color: #8c8c8c;
+}
+
+.hud-value {
+    color: white;
+    font-weight: 700;
+}
+
+.hud-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--neon);
+    box-shadow: 0 0 6px rgba(204,255,0,0.6);
+}
+
+/* =========================
+   INPUT / OUTPUT ROW
+========================= */
+.io-row {
+    flex: 1;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px; /* increased */
+    margin-bottom: 34px;
+}
+
+/* =========================
+   PANEL (QUIET ZONE)
+========================= */
+.panel {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+
+    border: 1px solid var(--border-soft);
+    background:
+        linear-gradient(var(--panel-solid), var(--panel-solid)),
+        var(--panel);
+    background-blend-mode: normal;
+
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.04),
+        0 8px 24px rgba(0,0,0,0.6);
+}
+
+/* =========================
+   SYSTEM LOG ROW
+========================= */
+.bottom-row {
+    margin-top: 34px;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 32px;
+    min-height: 180px;
+}
+
+/* =========================
+   PIE (NO ORANGE LINE EVER)
+========================= */
+.pie-chart {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background:
+        conic-gradient(var(--neon) var(--degrees,0deg), #1a1a1a 0deg);
+    position: relative;
+
+    box-shadow:
+        0 0 0 10px var(--bg), /* thicker = less cramped */
+        0 0 20px rgba(204,255,0,0.18);
+}
+
+.pie-chart::before {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    border-radius: 50%;
+    background: #000;
+}
+
+.pie-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono';
+    font-weight: 900;
+    font-size: 1.15rem;
+    color: white;
+}
+
+/* =========================
+   TERMINAL (LESS CLUTTERED)
+========================= */
+.monitor-frame {
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: #000;
+    padding: 22px 26px;
+
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.04),
+        0 12px 32px rgba(0,0,0,0.75);
+}
+
+.monitor-frame::before,
+.monitor-frame::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+.monitor-frame::before {
+    top: -1px;
+    left: -1px;
+    border-top: 2px solid var(--neon);
+    border-left: 2px solid var(--neon);
+}
+
+.monitor-frame::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 2px solid var(--neon);
+    border-right: 2px solid var(--neon);
+}
+
+/* =========================
+   INITIALIZE BUTTON (MORE PRESENCE)
+========================= */
+#render-btn {
+    position: absolute;
+    top: 18px;
+    right: 28px;
+
+    padding: 20px 42px;
+    background: var(--neon);
+    color: #000;
+
+    font-family: 'JetBrains Mono';
+    font-size: 0.95rem;
+    font-weight: 900;
+    letter-spacing: 1.4px;
+
+    border: none;
+    clip-path: polygon(10% 0, 100% 0, 92% 100%, 0 100%);
+    cursor: pointer;
+
+    box-shadow: 0 8px 24px rgba(204,255,0,0.35);
+}
+
+#render-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(204,255,0,0.45);
+}

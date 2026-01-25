@@ -1,0 +1,41 @@
+==========================================================
+            REFLOW STUDIO v0.5 - INSTALL GUIDE
+==========================================================
+
+1. SYSTEM REQUIREMENTS
+-----------------------
+- GPU: NVIDIA RTX Series preferred (for High-Def Lip-Sync).
+- RAM: 6GB Minimum.
+- OS: Windows 10/11.
+- LLM BRAIN: Ollama must be installed and running.
+
+2. PREREQUISITES
+-----------------
+This application requires Ollama to handle script analysis and translation.
+- If you don't have it, download it at: https://ollama.com/download
+- Before running a render, ensure you have pulled the required model by 
+  running this in your terminal: ollama run llama3
+
+3. HOW TO START
+----------------
+- Use the 'Reflow Studio' shortcut on your Desktop.
+- Alternatively, run 'Run_Reflow_Studio.bat' inside the installation folder.
+- DO NOT run 'ReflowStudio.exe' directly, as it requires the path 
+  injections provided by the Batch file.
+
+4. ADDING CUSTOM VOICES
+------------------------
+To add more RVC models:
+1. Open the installation folder.
+2. Go to: models > rvc > weights
+3. Drop your .pth and .index files there.
+4. Restart Reflow Studio.
+
+5. TROUBLESHOOTING
+-------------------
+- If the CMD window closes immediately: Ensure no other Python instances 
+  are conflicting and your GPU drivers are up to date.
+- If Render fails: Check the 'System Log' inside the app for specific error codes.
+
+Support: Reflow Studio v0.5 (Stable Build)
+==========================================================

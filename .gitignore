@@ -1,0 +1,46 @@
+# --- PYTHON ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- VIRTUAL ENVIRONMENTS ---
+venv/
+env/
+.venv/
+Reflow_Portable/
+
+# --- MODELS & LARGE FILES (CRITICAL) ---
+# Prevent uploading heavy AI weights to GitHub
+models/
+*.pth
+*.pt
+*.bin
+*.onnx
+*.safetensors
+*.ckpt
+
+# --- BUILD ARTIFACTS ---
+# Junk created by PyInstaller
+build/
+dist/
+*.spec
+
+# --- IDE SETTINGS ---
+.vscode/
+.idea/
+
+# --- MEDIA & OUTPUTS ---
+# Don't track your test videos or render outputs
+*.mp4
+*.mp3
+*.wav
+*.png
+*.jpg
+outputs/
+temp/
+results/
+
+# --- SYSTEM JUNK ---
+Thumbs.db
+Desktop.ini
+.DS_Store
