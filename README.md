@@ -19,11 +19,12 @@
 [Report Bug](https://github.com/ananta-sj/Reflow-Studio/issues) · [Request Feature](https://github.com/ananta-sj/Reflow-Studio/issues)
 
 </div>
----
+
+
 ## 🎞️ Trailer (v0.5)
 
 <div align="center">
-  <video src="assets\files\Trailer.mp4" width="80%" controls></video>
+  <video src="[assets/files/Trailer.mp4](https://github.com/user-attachments/assets/9297d024-b4ea-4577-adde-5174235c2056)" width="80%" controls></video>
 </div>
 
 
