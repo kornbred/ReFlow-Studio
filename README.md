@@ -67,7 +67,7 @@
 
 ### Option A: The One-Click Portable App (Recommended)
 No coding required. Just download, extract, and run.
-1. Go to the [**Releases**](https://github.com/YOUR_USERNAME/Reflow-Studio/releases) page.
+1. Go to the [**Releases**](https://github.com/ananta-sj/Reflow-Studio/releases) page.
 2. Download `Reflow_Portable.part01 - part05`.
 3. Extract the files.
 4. Double-click **`Run_Reflow.bat`**.
