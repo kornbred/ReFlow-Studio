@@ -95,7 +95,7 @@ pip install torch torchvision torchaudio --index-url [https://download.pytorch.o
 pip install -r requirements.txt
 
 # 5. Run the Studio
-python studio_gui_v0.5.2.py
+python studio_gui_v0.5.py
 ```
 
 ### **Part 3: Usage, Structure & Footer**
