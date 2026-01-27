@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎙️ Reflow Studio v0.5
+# 🎙️ Reflow Studio v0.5.2
 ### AI-Powered Neural Dubbing & Lip-Sync Workstation
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
@@ -21,7 +21,7 @@
 </div>
 
 
-## 🎞️ Trailer (v0.5)
+## 🎞️ Trailer (v0.5.2)
 
 <div align="center">
   <video src="https://github.com/user-attachments/assets/9297d024-b4ea-4577-adde-5174235c2056" width="80%" controls></video>
@@ -45,7 +45,7 @@
 
 ## 🎞️ Demo (UI)
 
-> *The following is a raw view from Reflow Studio v0.5.*
+> *The following is a raw view from Reflow Studio v0.5.2.*
 
 <div align="center">
   <video src="https://github.com/user-attachments/assets/f0f7a2d6-8159-4bd2-9742-de48ff652a1d" width="80%" controls></video>
@@ -55,7 +55,7 @@
 
 ## 🎞️ Test Sample
 
-> *The following is a raw input and output from Reflow Studio v0.5.*
+> *The following is a raw input and output from Reflow Studio v0.5.2.*
 
 | **Original Input** | **Reflow Output** |
 | :---: | :---: |
@@ -95,7 +95,7 @@ pip install torch torchvision torchaudio --index-url [https://download.pytorch.o
 pip install -r requirements.txt
 
 # 5. Run the Studio
-python studio_gui_v0.5.py
+python studio_gui_v0.5.2.py
 ```
 
 ### **Part 3: Usage, Structure & Footer**
@@ -125,7 +125,7 @@ Reflow-Studio/
 ├── models/                # AI Weights (RVC, GFPGAN, etc.)
 │   ├── rvc/
 │   └── gfpgan/
-├── studio_gui_v0.5.py     # Main Gradio Interface Entry Point
+├── studio_gui_v0.5.2.py     # Main Gradio Interface Entry Point
 ├── requirements.txt       # Python Dependencies
 └── README.md              # Documentation
 ```
