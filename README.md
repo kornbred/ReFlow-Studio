@@ -1,27 +1,29 @@
 <div align="center">
 
-# 🎙️ Reflow Studio v0.5.2
-### AI-Powered Neural Dubbing & Lip-Sync Workstation
+# 🎙️ Reflow Studio v0.5.3
+### AI-Powered Neural Dubbing & Lip-Sync Workstation (Universal Portable)
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.1+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Gradio](https://img.shields.io/badge/UI-Gradio-FF7C00?style=for-the-badge&logo=gradio&logoColor=white)](https://gradio.app/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
 <br/>
 
-<img src="assets\files\LOGO_ICON.png" width="100" alt="Reflow Studio Demo">
+<img src="assets/files/LOGO_ICON.png" width="100" alt="Reflow Studio Demo">
 
 <br/>
 
 **Reflow Studio** is a local, privacy-focused AI workstation for video dubbing, voice cloning, and lip synchronization. It combines state-of-the-art models (**RVC**, **Wav2Lip**, **GFPGAN**) into a single, cohesive "Cyberpunk" interface designed for creators.
+
+**New in v0.5.3:** Now fully portable across **Windows**, **Mac (Apple Silicon/Intel)**, and **Linux** with a self-healing core.
 
 [Report Bug](https://github.com/ananta-sj/Reflow-Studio/issues) · [Request Feature](https://github.com/ananta-sj/Reflow-Studio/issues)
 
 </div>
 
 
-## 🎞️ Trailer (v0.5.2)
+## 🎞️ Trailer
 
 <div align="center">
   <video src="https://github.com/user-attachments/assets/9297d024-b4ea-4577-adde-5174235c2056" width="80%" controls></video>
@@ -37,15 +39,15 @@
 | **🤖 Neural Voice Cloning** | Clone voices instantly using **RVC (Retrieval-based Voice Conversion)**. |
 | **👄 Wav2Lip Sync** | Automatically synchronize lip movements to match the new dubbed audio. |
 | **👁️ Face Enhancement** | Restore face details lost during lip-sync using **GFPGAN** & **CodeFormer**. |
-| **🎬 Auto-Dubbing** | (Coming Soon) End-to-end video-to-video translation and dubbing. |
-| **🛡️ Vision Meter** | Real-time content filtering and "Family Mode" safety checks. |
+| **🛡️ Self-Healing Core** | **[NEW]** Automatic detection and repair of missing models, broken environments, and GPU drivers. |
+| **🌐 Universal Portable** | **[NEW]** Runs on Windows (NVIDIA), Mac (M1/M2/M3), and Linux automatically. |
 | **🚀 Portable Runtime** | Runs locally without complex installation (See Releases). |
 
 ---
 
 ## 🎞️ Demo (UI)
 
-> *The following is a raw view from Reflow Studio v0.5.2.*
+> *The following is a raw view from Reflow Studio v0.5.x.*
 
 <div align="center">
   <video src="https://github.com/user-attachments/assets/f0f7a2d6-8159-4bd2-9742-de48ff652a1d" width="80%" controls></video>
@@ -55,7 +57,7 @@
 
 ## 🎞️ Test Sample
 
-> *The following is a raw input and output from Reflow Studio v0.5.2.*
+> *The following is a raw input and output from Reflow Studio.*
 
 | **Original Input** | **Reflow Output** |
 | :---: | :---: |
@@ -67,10 +69,20 @@
 
 ### Option A: The One-Click Portable App (Recommended)
 No coding required. Just download, extract, and run.
-1. Go to the [**Releases**](https://github.com/ananta-sj/Reflow-Studio/releases) page.
-2. Download `Reflow_Portable.part01 - part05`.
-3. Extract the files.
-4. Double-click **`Run_Reflow.bat`**.
+
+#### 🪟 Windows Users
+1. Download `Reflow_Portable_v0.5.3.zip` from [**Releases**](https://github.com/ananta-sj/Reflow-Studio/releases).
+2. Extract the folder to a short path (e.g., `D:\Reflow`). **Do not use "C:\Program Files".**
+3. Double-click **`LAUNCH_REFLOW.bat`**.
+
+#### 🍎 Mac & 🐧 Linux Users
+1. Download & Extract the portable zip.
+2. Open Terminal and navigate to the folder (`cd /path/to/Reflow_Portable`).
+3. Run the command: `sh LAUNCH_REFLOW.sh`
+
+> **FIRST RUN NOTE:** The app will automatically scan your hardware (NVIDIA/Apple Silicon/Intel) and may spend 5-10 minutes downloading the correct AI engine for your system.
+
+---
 
 ### Option B: Developer Setup (Source)
 If you want to modify the code or run it in your own Python environment.
@@ -128,7 +140,7 @@ Reflow-Studio/
 ├── models/                # AI Weights (RVC, GFPGAN, etc.)
 │   ├── rvc/
 │   └── gfpgan/
-├── studio_gui_v0.5.2.py     # Main Gradio Interface Entry Point
+├── studio_gui_v0.5.py     # Main Gradio Interface Entry Point
 ├── requirements.txt       # Python Dependencies
 └── README.md              # Documentation
 ```
