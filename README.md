@@ -26,7 +26,7 @@
 ## 🎞️ Trailer
 
 <div align="center">
-  <video src="[https://github.com/user-attachments/assets/9297d024-b4ea-4577-adde-5174235c2056](https://github.com/user-attachments/assets/35e31364-1610-4687-b974-8e1fd8c6b618)" width="80%" controls></video>
+  <video src="https://github.com/user-attachments/assets/35e31364-1610-4687-b974-8e1fd8c6b618" width="80%" controls></video>
 </div>
 
 
@@ -47,7 +47,7 @@
 
 ## 🎞️ Demo (UI)
 
-> *The following is a raw view from Reflow Studio v0.5.x.*
+> *The following is a raw view from Reflow Studio v0.5.3. Not v0.5.5.*
 
 <div align="center">
   <video src="https://github.com/user-attachments/assets/f0f7a2d6-8159-4bd2-9742-de48ff652a1d" width="80%" controls></video>
@@ -71,7 +71,7 @@
 No coding required. Just download, extract, and run.
 
 #### 🪟 Windows Users
-1. Download `Reflow_Portable_v0.5.5.zip` from [**Releases**](https://github.com/ananta-sj/Reflow-Studio/releases).
+1. Download `Reflow_Portable.zip` from [**Releases**](https://github.com/ananta-sj/Reflow-Studio/releases).
 2. Extract the folder to a short path (e.g., `D:\Reflow`). **Do not use "C:\Program Files".**
 3. Double-click **`LAUNCH_REFLOW.bat`**.
 
